@@ -1,0 +1,23 @@
+; 资源文件方向智能助手 - 配置文件
+; 可在「⚙ 设置」窗口中修改，或手动编辑此文件
+; 程序首次运行时会自动生成此文件
+
+[Player]
+; PotPlayer 可执行文件路径（默认标准安装位置）
+PotPlayer=C:\Program Files\DAUM\PotPlayer\PotPlayer.exe
+
+[Converter]
+; FFmpeg 路径（用于 TS→MP4 转换，默认程序当前目录）
+FFmpeg=ffmpeg.exe
+; FFprobe 路径（用于检测视频分辨率方向，默认程序当前目录）
+FFprobe=ffprobe.exe
+
+[Naming]
+; 横向视频/图片的文件名前缀
+HorizontalPrefix=横向_
+; 竖向视频/图片的文件名前缀
+VerticalPrefix=竖向_
+
+[Options]
+; 重命名/复位时是否包含子目录（true/false）
+IncludeSubdir=false

@@ -1,0 +1,19 @@
+=====================================================
+  设计器安全验证清单（VS 双击 MainForm.cs 可打开）
+=====================================================
+
+✅ Designer.cs 中不含任何业务方法调用
+   (InitBtn, LoadDirs, GetIcon, SHGetFileInfo 等)
+
+✅ Designer.cs 中不含 SplitContainer 危险属性赋值
+   Panel1MinSize / Panel2MinSize / SplitterDistance
+   → 这些只在 MainForm.cs 的 OnLoad() 中设置
+
+✅ Designer.cs 中所有控件只做：
+   - new 控件()
+   - 设置 Name / Text / Dock / Size / BackColor 等纯属性
+   - Add 到父容器
+
+✅ 编译验证：mcs exit 0, 零错误零警告
+
+=====================================================
