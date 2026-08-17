@@ -1,6 +1,10 @@
 # 资源文件方向智能助手 v1.1
-
 .NET Framework 4.7.2 WinForm 纯 C# 项目。
+
+可以将选择的文件夹下的图片或视频根据长宽比自动批量的在原文件名前加上“横向_”或“竖向_”前缀，并支持通过potplayer建立播放列表并自动播放横向或竖向视频。另外支持快速ts转mp4功能。
+
+
+<img width="911" height="542" alt="image" src="https://github.com/user-attachments/assets/cf22b4e6-8c63-4e71-8162-49b54873332c" />
 
 ## 新增功能（v1.1）
 
